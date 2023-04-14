@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model ForwardProxy.Models.Request
+
+<div class="text-center">
+    <form asp-action="Index" asp-controller="Proxy">
+        <label asp-for="RequestedUrl"></label>
+        <input asp-for="RequestedUrl" value="https://www.reddit.com/" />
+        <input type="submit" />
+    </form>
+</div>
